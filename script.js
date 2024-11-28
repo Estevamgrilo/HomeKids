@@ -13,3 +13,6 @@ tasks.forEach(task => {
   taskElement.innerHTML = `<p>${task.day}: ${task.task} - <strong>${task.points} Migux</strong></p>`;
   tasksDiv.appendChild(taskElement);
 });
+fetch('https://replit.com/@estevamgrilo/Home-Kids')
+  .then(response => response.json())
+  .then(data => console.log(data));
